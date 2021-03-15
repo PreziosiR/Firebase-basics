@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js" type = "text/javascript"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDSP-75V0FI0M-uGzp4XrM9Wbq1GkbWULI",
+            authDomain: "something-unique-84010.firebaseapp.com",
+            projectId: "something-unique-84010",
+            storageBucket: "something-unique-84010.appspot.com",
+            messagingSenderId: "893348998455",
+            appId: "1:893348998455:web:6e05df31f4d9c82ae43eb2",
+            measurementId: "G-Y85JKQKBY9"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="app.js" defer></script>
+</head>
+</head>
+
+<body>
+    <h1>My Awesome App ! </h1>
+
+    <section id="whenSignedOut">
+        <button id="signInBtn">Sign in with Google</button>
+    </section>
+
+    <section id="whenSignedIn" hidden="true">
+        <div id="userDetails"></div>
+        <button id="signOutBtn">Sign out</button>
+    </section>
+
+    <section>
+        <ul id="thingsList">
+
+        </ul>
+
+        <button id="createThings">Create random things</button>
+
+    </section>
+</body>
+
+</html>
